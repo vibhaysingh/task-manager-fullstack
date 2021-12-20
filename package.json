@@ -4,7 +4,7 @@
   "description": "\"full stack app to manage your daily tasks with security\"",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "vibhay singh",
   "license": "ISC",
