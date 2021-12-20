@@ -23,7 +23,10 @@ app.set("view engine", "ejs");
 
 // database connection
 mongoose
-  .connect(process.env.MONGO_URL, {})
+  .connect(
+    "mongodb+srv://jackwalker:jack@cluster0.xb0qo.mongodb.net/todoappdb?retryWrites=true&w=majority",
+    {}
+  )
   .then(console.log("Connected to MongoDB Atlas"))
   .catch((err) => console.log(err));
 app.listen(port, () => {
